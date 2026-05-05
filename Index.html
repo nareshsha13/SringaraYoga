@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sringara Yoga</title>
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #f5efe6;
+    color: #2f2f2f;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px; /* reduced padding */
+    box-sizing: border-box; /* IMPORTANT */
+}
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #1f4d3a;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #b68a2d;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1506126613408-eca07ce68773'); /* calm yoga background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    color: #f5efe6; /* soft cream – matches theme & visible on dark */
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* SECTION */
+.section {
+    padding: 90px 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #1f4d3a;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #1f4d3a;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ENQUIRY */
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #b68a2d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+}
+
+/* FOOTER */
+.footer {
+    background: #1f4d3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div>
+    <h1 style="margin:0;">Sringara Yoga</h1>
+    <div class="sub-brand">by Naresh Sha</div>
+</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#classes">Classes</a>
+<a href="#enquiry">Enquiry</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+<div>
+<h2>Wellness with Yoga & Ragas</h2>
+<p style="max-width:700px;margin:auto;">
+Sringara Yoga brings together music therapy and yoga. Through Carnatic ragas and mindful practices, 
+we explore emotional healing, balance, and the power of sound in wellness.
+</p>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2>About</h2>
+<p style="max-width:700px;margin:auto;">
+A yoga practitioner with over 10 years of experience, certified yoga instructor, 
+certified music therapist, and a budding flutist. The sessions are beginner-friendly 
+and designed to create a calm and welcoming space for all.
+</p>
+</section>
+
+<!-- CLASSES -->
+<section id="classes" class="section">
+<h2>Classes</h2>
+
+<h3 style="margin-top:30px;">What We Cover</h3>
+
+<div class="feature-list">
+
+    <div class="feature-item">
+        <div class="icon">🧘</div>
+        <div>
+            <h4>Stretches</h4>
+            <p>Improve mobility and release body tension</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="icon">🌞</div>
+        <div>
+            <h4>Surya Namaskar</h4>
+            <p>Energize the body and awaken inner vitality</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="icon">🪷</div>
+        <div>
+            <h4>Asanas</h4>
+            <p>Build strength, flexibility and body awareness</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="icon">🌬️</div>
+        <div>
+            <h4>Pranayama</h4>
+            <p>Improve breath control and energy flow</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="icon">🎶</div>
+        <div>
+            <h4>Music Therapy (Add-on)</h4>
+            <p>Healing through Carnatic ragas to uplift mind and emotions</p>
+        </div>
+    </div>
+
+</div>
+
+<h3 style="margin-top:50px;">Benefits</h3>
+
+<div class="cards">
+<div class="card">Improves flexibility and strength</div>
+<div class="card">Reduces stress and promotes calm</div>
+<div class="card">Enhances mindfulness and wellbeing</div>
+</div>
+
+<h3 style="margin-top:50px;">Class Details</h3>
+
+<div class="cards">
+<div class="card">
+<h4>Schedule</h4>
+<p>Mon / Wed / Fri</p>
+<p>6:15 AM – 7:00 AM</p>
+</div>
+
+<div class="card">
+<h4>Format</h4>
+<p>Online sessions</p>
+<p>45 minutes</p>
+</div>
+
+<div class="card">
+<h4>Level</h4>
+<p>Beginner to Intermediate</p>
+</div>
+</div>
+
+</section>
+</section>
+
+<!-- ENQUIRY -->
+<section id="enquiry" class="section">
+<h2>Enquiry</h2>
+
+<form action="mailto:Nareshsha13@gmail.com" method="POST" enctype="text/plain">
+
+<label>Name</label>
+<input type="text" name="Name" required>
+
+<label>Email</label>
+<input type="email" name="Email" required>
+
+<label>Contact Number</label>
+<input type="text" name="Phone">
+
+<label>Message</label>
+<textarea name="Message" rows="4" required></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<p style="margin-top:20px;">Email: Nareshsha13@gmail.com</p>
+<p>Instagram: @SringarayogabyNaresh</p>
+
+</section>
+
+<div class="footer">
+© 2026 Sringara Yoga | Designed with Harmony
+</div>
+
+</body>
+</html>
